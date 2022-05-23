@@ -1,0 +1,13 @@
+SampleMod_ModuleHelloWorldEntity : "{5B0C65FF006E45B9}PrefabsEditable/Modules/E_ModuleBase.et" {
+ ID "5966425E7EAD31EE"
+ components {
+  SCR_EditableDescriptorComponent "{5966425E7EAD31F0}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5966425E7EAD31FC}" {
+    Name "Hello World Module"
+    Description "Hello World Module Description"
+    Icon "{206781701A8D8991}UI/Textures/EditorPreviews/Auto/Systems/RestrictionZone/E_EditorRestrictionZoneSmall.edds"
+    m_Image "{206781701A8D8991}UI/Textures/EditorPreviews/Auto/Systems/RestrictionZone/E_EditorRestrictionZoneSmall.edds"
+   }
+  }
+ }
+}

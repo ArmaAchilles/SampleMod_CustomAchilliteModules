@@ -1,0 +1,15 @@
+SCR_EditorModeEntity : "{E56F54E533ACE527}Prefabs/Editor/Modes/EditorModeBase.et" {
+ ID "54F0A77282A3AA3B"
+ components {
+  SCR_PlacingEditorComponent "{5145484399BAA2E7}" {
+   m_Registries {
+    SCR_PlaceableEntitiesRegistry "{59695EFB8A4212C0}" {
+     m_sSourceDirectory "{342F5AFA2455DFF7}PrefabsEditable/Modules"
+     m_Prefabs {
+      "{538125A61BA737D4}PrefabsEditable/Modules/E_ModuleHelloWorld.et"
+     }
+    }
+   }
+  }
+ }
+}

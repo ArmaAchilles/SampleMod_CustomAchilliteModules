@@ -17,24 +17,7 @@ class SampleMod_ModuleHelloWorldEntity: ACL_ModuleEntityBase
 		string message = string.Format("Position: {%1}\nEntity Name: \"%2\"", pos.ToString(false), entityName);
 		Print(message);
 		SCR_HintManagerComponent.GetInstance().ShowCustomHint(message, m_title, 3.0);
-		if (entity)
-		{
-			IEntity owner = entity.GetOwner();
-			SCR_AIGroup group = SCR_AIGroup.Cast(owner);
-			if (group)
-			{
-				array<AIAgent> agents = {};
-				group.GetAgents(agents);
-				foreach (AIAgent agent : agents)
-				{
-					SCR_AIInfoComponent infoComp = SCR_AIInfoComponent.Cast(agent.FindComponent(SCR_AIInfoComponent));
-					CharacterControllerComponent charCtrlComp = CharacterControllerComponent.Cast(agent.GetControlledEntity().FindComponent(CharacterControllerComponent));
-					infoComp.SetStance(ECharacterStance.PRONE);
-					charCtrlComp.ForceStance(ECharacterStance.PRONE);
-					charCtrlComp.SetStanceChange(ECharacterStanceChange.STANCECHANGE_TOPRONE);
-				};
-			};
-		};
+		
 		Delete();
 	}
 };
